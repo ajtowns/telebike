@@ -7,7 +7,7 @@ refdes=K1
 T 53700 49300 5 10 0 1 0 0 1
 device=stellaris-launchpad
 T 51400 49600 5 10 0 0 0 0 1
-footprint=Kit
+footprint=launchpad-header-40
 }
 C 60100 42800 1 0 0 MC34063-1.sym
 {
@@ -28,6 +28,8 @@ T 63200 44000 5 10 1 1 270 0 1
 refdes=R3
 T 62600 43700 5 10 1 1 0 0 1
 value=0.3
+T 62900 44200 5 10 1 1 0 0 1
+footprint=0.125W_Carbon_Resistor
 }
 C 57500 43500 1 0 0 inductor-1.sym
 {
@@ -37,6 +39,8 @@ T 57700 43800 5 10 1 1 0 0 1
 refdes=L1
 T 57700 44200 5 10 0 0 0 0 1
 symversion=0.1
+T 57500 43500 5 10 1 1 0 0 1
+footprint=0.125W_Carbon_Resistor
 }
 C 62800 43200 1 270 0 capacitor-2.sym
 {
@@ -48,6 +52,8 @@ T 63700 43000 5 10 0 0 270 0 1
 symversion=0.1
 T 63200 42500 5 10 1 1 0 0 1
 value=22uF
+T 62800 43200 5 10 1 1 0 0 1
+footprint=CK05_type_Capacitor
 }
 C 57300 43600 1 270 0 capacitor-2.sym
 {
@@ -59,6 +65,8 @@ T 58200 43400 5 10 0 0 270 0 1
 symversion=0.1
 T 57700 42900 5 10 1 1 0 0 1
 value=22uF
+T 57300 43600 5 10 1 1 0 0 1
+footprint=CK05_type_Capacitor
 }
 C 58800 42400 1 90 0 schottky-1.sym
 {
@@ -91,6 +99,8 @@ T 60100 42800 5 10 0 0 270 0 1
 symversion=0.1
 T 59500 42300 5 10 1 1 0 0 1
 value=220pF
+T 59200 43000 5 10 1 1 0 0 1
+footprint=CK05_type_Capacitor
 }
 N 59400 43000 59400 43300 4
 N 59400 43300 60100 43300 4
@@ -107,6 +117,8 @@ T 61200 41500 5 10 1 1 0 0 1
 refdes=R2
 T 61300 41000 5 10 1 1 0 0 1
 value=36k
+T 61000 41200 5 10 1 1 0 0 1
+footprint=0.125W_Carbon_Resistor
 }
 N 61900 41300 62200 41300 4
 N 57100 41300 61000 41300 4
@@ -129,6 +141,8 @@ T 61200 42300 5 10 1 1 0 0 1
 refdes=R1
 T 61200 41800 5 10 1 1 0 0 1
 value=12k
+T 61000 42000 5 10 1 1 0 0 1
+footprint=0.125W_Carbon_Resistor
 }
 N 61900 42100 62200 42100 4
 N 63000 42100 63000 42300 4
@@ -139,6 +153,8 @@ T 43600 48700 5 10 0 0 0 0 1
 device=FTDI
 T 41800 48900 5 10 1 1 0 0 1
 refdes=9DOF
+T 41800 46900 5 10 1 1 0 0 1
+footprint=FTDI
 }
 C 45200 43700 1 0 0 ftdi.sym
 {
@@ -146,6 +162,8 @@ T 47000 45500 5 10 0 0 0 0 1
 device=FTDI
 T 45100 45700 5 10 1 1 0 0 1
 refdes=OpenLog
+T 45200 43700 5 10 1 1 0 0 1
+footprint=FTDI
 }
 C 61000 47900 1 0 1 ftdi.sym
 {
@@ -153,6 +171,8 @@ T 59200 49700 5 10 0 0 0 6 1
 device=FTDI
 T 61000 49900 5 10 1 1 0 6 1
 refdes=OBD2
+T 61000 47900 5 10 1 1 0 0 1
+footprint=FTDI
 }
 C 59500 47800 1 0 1 ground.sym
 C 43300 46800 1 0 0 ground.sym
@@ -176,6 +196,8 @@ T 42900 53100 5 10 0 0 0 0 1
 device=CONNECTOR_8
 T 42900 52500 5 10 1 1 0 0 1
 refdes=TM
+T 42800 49900 5 10 1 1 0 0 1
+footprint=JUMPER8
 }
 N 44500 52200 45700 52200 4
 N 44500 51900 47400 51900 4
