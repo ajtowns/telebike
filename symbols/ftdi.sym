@@ -2,66 +2,66 @@ v 20110115 2
 P 1400 1400 1700 1400 1 0 1
 {
 T 150 1350 5 8 1 1 0 0 1
-pinnumber=TXO
+pinlabel=TXO
 T 250 1350 5 8 0 0 0 0 1
 pinseq=2
 T 250 1350 5 8 0 1 0 0 1
-pinlabel=2
+pinnumber=2
 T 250 1350 5 8 0 1 0 0 1
 pintype=io
 }
 P 1400 800 1700 800 1 0 1
 {
 T 150 750 5 8 1 1 0 0 1
-pinnumber=3.3V
+pinlabel=3.3V
 T 250 750 5 8 0 0 0 0 1
 pinseq=4
 T 250 750 5 8 0 1 0 0 1
-pinlabel=4
+pinnumber=4
 T 250 750 5 8 0 1 0 0 1
-pintype=io
+pintype=pwr
 }
 P 1400 200 1700 200 1 0 1
 {
 T 150 150 5 8 1 1 0 0 1
-pinnumber=GND
+pinlabel=GND
 T 250 150 5 8 0 0 0 0 1
 pinseq=6
 T 250 150 5 8 0 1 0 0 1
-pinlabel=6
+pinnumber=6
 T 250 150 5 8 0 1 0 0 1
-pintype=io
+pintype=pwr
 }
 P 1400 1700 1700 1700 1 0 1
 {
 T 150 1650 5 8 1 1 0 0 1
-pinnumber=DTR
+pinlabel=DTR
 T 250 1650 5 8 0 0 0 0 1
 pinseq=1
 T 250 1650 5 8 0 1 0 0 1
-pinlabel=1
+pinnumber=1
 T 250 1650 5 8 0 1 0 0 1
 pintype=io
 }
 P 1400 1100 1700 1100 1 0 1
 {
 T 150 1050 5 8 1 1 0 0 1
-pinnumber=RXI
+pinlabel=RXI
 T 250 1050 5 8 0 0 0 0 1
 pinseq=3
 T 250 1050 5 8 0 1 0 0 1
-pinlabel=3
+pinnumber=3
 T 250 1050 5 8 0 1 0 0 1
 pintype=io
 }
 P 1400 500 1700 500 1 0 1
 {
 T 150 450 5 8 1 1 0 0 1
-pinnumber=CTS
+pinlabel=CTS
 T 250 450 5 8 0 0 0 0 1
 pinseq=5
 T 250 450 5 8 0 1 0 0 1
-pinlabel=5
+pinnumber=5
 T 250 450 5 8 0 1 0 0 1
 pintype=io
 }
