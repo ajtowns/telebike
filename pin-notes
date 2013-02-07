@@ -27,3 +27,10 @@ uart (rx,tx,cts,rts)
 ** PE0 PE1
 
 PA2 PA4 PA5 PA6 PA7  TM: c0 mo0 mi0 irq cs1 (PA3 is fs0?)
+
+ground c0  mo0 mi0 irq cs1 3.3 lipo
+G      PA2 PA4 PA5     PA3
+
+
+Sats: 2 18 27 22 32
+
