@@ -26,9 +26,9 @@ Element(0x00 "Header connector, ribbon cable numbering" "" "launchpad-header-40"
 	ElementLine(-50 950 150 950 10)
 	ElementLine(150 950 150 -50 10)
 	ElementLine(150 -50 -50 -50 10)
+	ElementLine( 50 -50  50 950 10)
 
 	ElementLine(-50  50  50  50 10)
-	ElementLine( 50  50  50 -50 10)
 
 	 Pin(100 0 60 38 "21" 0x101)
 	 Pin(100 100 60 38 "22" 0x101)
@@ -56,9 +56,7 @@ Element(0x00 "Header connector, ribbon cable numbering" "" "launchpad-header-40"
 	ElementLine(1650 950 1850 950 10)
 	ElementLine(1850 950 1850 -50 10)
 	ElementLine(1850 -50 1650 -50 10)
-
-	ElementLine(1650  50  1750  50 10)
-	ElementLine(1750  50  1750 -50 10)
+	ElementLine(1750 -50 1750 950 10)
 
 	Mark(0 0)
 )

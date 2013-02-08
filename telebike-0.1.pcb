@@ -3,13 +3,13 @@
 # To read pcb files, the pcb version (or the git source date) must be >= the file version
 FileVersion[20070407]
 
-PCB["" 200000 170000]
+PCB["" 200000 166000]
 
 Grid[500.0 0 0 1]
-Cursor[0 2000 0.000000]
+Cursor[0 39000 0.000000]
 PolyArea[3100.006200]
 Thermal[0.500000]
-DRC[1000 1000 1000 1000 1300 1000]
+DRC[600 1000 600 500 1300 700]
 Flags("nameonpcb,clearnew,snappin")
 Groups("1,c:2,s:3")
 Styles["Signal,1000,3600,2000,1000:Power,2500,6000,3500,1000:Fat,4000,6000,3500,1000:Skinny,600,2402,1181,600"]
@@ -789,7 +789,7 @@ Symbol['~' 1200]
 Attribute("import::src0" "/home/aj/P/telebike/telebike-0.1.sch")
 Attribute("PCB::grid::unit" "mil")
 
-Element["" "capacitor" "C2" "22uF" 65000 35000 5600 7200 0 100 ""]
+Element["" "capacitor" "C2" "22uF" 65000 35000 5600 12200 0 100 ""]
 (
 	Attribute("device" "POLARIZED_CAPACITOR")
 	Attribute("manufacturer" "unknown")
@@ -805,7 +805,7 @@ Element["" "capacitor" "C2" "22uF" 65000 35000 5600 7200 0 100 ""]
 
 	)
 
-Element["" "0.125W_Carbon_Resistor" "L1" "unknown" 50000 35000 6600 7200 0 100 ""]
+Element["" "0.125W_Carbon_Resistor" "L1" "unknown" 50000 35000 -10400 12200 0 100 ""]
 (
 	Attribute("device" "INDUCTOR")
 	Attribute("manufacturer" "unknown")
@@ -823,7 +823,7 @@ Element["" "0.125W_Carbon_Resistor" "L1" "unknown" 50000 35000 6600 7200 0 100 "
 
 	)
 
-Element["" "capacitor" "C1" "22uF" 130000 95000 -9400 8200 0 100 ""]
+Element["" "capacitor" "C1" "22uF" 130000 95000 6600 11700 0 100 ""]
 (
 	Attribute("device" "POLARIZED_CAPACITOR")
 	Attribute("manufacturer" "unknown")
@@ -836,68 +836,6 @@ Element["" "capacitor" "C1" "22uF" 130000 95000 -9400 8200 0 100 ""]
 	ElementLine [-4000 12500 4000 12500 1000]
 	ElementLine [-4000 17500 4000 17500 1000]
 	ElementLine [0 17500 0 25000 1000]
-
-	)
-
-Element["" "launchpad-header-40" "K1" "unknown" 10000 35000 20000 4000 0 100 ""]
-(
-	Attribute("device" "stellaris-launchpad")
-	Attribute("manufacturer" "unknown")
-	Attribute("manufacturer_part_number" "unknown")
-	Attribute("vendor" "unknown")
-	Attribute("vendor_part_number" "unknown")
-	Pin[0 0 6000 3000 6600 3800 "+3.3V" "1" "square,edge2"]
-	Pin[0 10000 6000 3000 6600 3800 "PB5" "2" "edge2"]
-	Pin[0 20000 6000 3000 6600 3800 "PB0" "3" "edge2"]
-	Pin[0 30000 6000 3000 6600 3800 "PB1" "4" "edge2"]
-	Pin[0 40000 6000 3000 6600 3800 "PE4" "5" "edge2"]
-	Pin[0 50000 6000 3000 6600 3800 "PE5" "6" "edge2"]
-	Pin[0 60000 6000 3000 6600 3800 "PB4" "7" "edge2"]
-	Pin[0 70000 6000 3000 6600 3800 "PA5" "8" "edge2"]
-	Pin[0 80000 6000 3000 6600 3800 "PA6" "9" "edge2"]
-	Pin[0 90000 6000 3000 6600 3800 "PA7" "10" "edge2"]
-	Pin[180000 0 6000 3000 6600 3800 "GND" "11" "square,edge2,thermal(0X)"]
-	Pin[180000 10000 6000 3000 6600 3800 "PB2" "12" "edge2"]
-	Pin[180000 20000 6000 3000 6600 3800 "PE0" "13" "edge2"]
-	Pin[180000 30000 6000 3000 6600 3800 "PF0" "14" "edge2"]
-	Pin[180000 40000 6000 3000 6600 3800 "RST" "15" "edge2"]
-	Pin[180000 50000 6000 3000 6600 3800 "PB7" "16" "edge2"]
-	Pin[180000 60000 6000 3000 6600 3800 "PB6" "17" "edge2"]
-	Pin[180000 70000 6000 3000 6600 3800 "PA4" "18" "edge2"]
-	Pin[180000 80000 6000 3000 6600 3800 "PA3" "19" "edge2"]
-	Pin[180000 90000 6000 3000 6600 3800 "PA2" "20" "edge2"]
-	Pin[10000 0 6000 3000 6600 3800 "VBUS" "21" "square,edge2"]
-	Pin[10000 10000 6000 3000 6600 3800 "GND" "22" "square,edge2,thermal(0X)"]
-	Pin[10000 20000 6000 3000 6600 3800 "PD0" "23" "edge2"]
-	Pin[10000 30000 6000 3000 6600 3800 "PD1" "24" "edge2"]
-	Pin[10000 40000 6000 3000 6600 3800 "PD2" "25" "edge2"]
-	Pin[10000 50000 6000 3000 6600 3800 "PD3" "26" "edge2"]
-	Pin[10000 60000 6000 3000 6600 3800 "PE1" "27" "edge2"]
-	Pin[10000 70000 6000 3000 6600 3800 "PE2" "28" "edge2"]
-	Pin[10000 80000 6000 3000 6600 3800 "PE3" "29" "edge2"]
-	Pin[10000 90000 6000 3000 6600 3800 "PF1" "30" "edge2"]
-	Pin[170000 0 6000 3000 6600 3800 "PF2" "31" "edge2"]
-	Pin[170000 10000 6000 3000 6600 3800 "PF3" "32" "edge2"]
-	Pin[170000 20000 6000 3000 6600 3800 "PB3" "33" "edge2"]
-	Pin[170000 30000 6000 3000 6600 3800 "PC4" "34" "edge2"]
-	Pin[170000 40000 6000 3000 6600 3800 "PC5" "35" "edge2"]
-	Pin[170000 50000 6000 3000 6600 3800 "PC6" "36" "edge2"]
-	Pin[170000 60000 6000 3000 6600 3800 "PC7" "37" "edge2"]
-	Pin[170000 70000 6000 3000 6600 3800 "PD6" "38" "edge2"]
-	Pin[170000 80000 6000 3000 6600 3800 "PD7" "39" "edge2"]
-	Pin[170000 90000 6000 3000 6600 3800 "PF4" "40" "edge2"]
-	ElementLine [-5000 -5000 -5000 95000 1000]
-	ElementLine [-5000 95000 15000 95000 1000]
-	ElementLine [15000 -5000 15000 95000 1000]
-	ElementLine [-5000 -5000 15000 -5000 1000]
-	ElementLine [-5000 5000 5000 5000 1000]
-	ElementLine [5000 -5000 5000 5000 1000]
-	ElementLine [165000 -5000 165000 95000 1000]
-	ElementLine [165000 95000 185000 95000 1000]
-	ElementLine [185000 -5000 185000 95000 1000]
-	ElementLine [165000 -5000 185000 -5000 1000]
-	ElementLine [165000 5000 175000 5000 1000]
-	ElementLine [175000 -5000 175000 5000 1000]
 
 	)
 
@@ -925,7 +863,7 @@ Element["" "DIP8" "U1" "unknown" 80000 75000 11000 3000 0 100 ""]
 
 	)
 
-Element["" "0.125W_Carbon_Resistor" "R3" "0.3" 140000 65000 -12400 11200 0 100 ""]
+Element["" "0.125W_Carbon_Resistor" "R3" "0.3" 140000 65000 6100 8200 0 100 ""]
 (
 	Attribute("device" "RESISTOR")
 	Attribute("manufacturer" "unknown")
@@ -943,7 +881,7 @@ Element["" "0.125W_Carbon_Resistor" "R3" "0.3" 140000 65000 -12400 11200 0 100 "
 
 	)
 
-Element["" "capacitor" "C3" "220pF" 65000 95000 -7400 6200 0 100 ""]
+Element["" "capacitor" "C3" "220pF" 65000 95000 -10900 11700 0 100 ""]
 (
 	Attribute("device" "POLARIZED_CAPACITOR")
 	Attribute("manufacturer" "unknown")
@@ -1001,7 +939,7 @@ Element["" "FTDI" "OPENLOG" "unknown" 140000 15000 -5000 -11000 0 100 ""]
 
 	)
 
-Element["" "0.125W_Carbon_Resistor" "R2" "36k" 80000 140000 5600 6200 0 100 ""]
+Element["" "0.125W_Carbon_Resistor" "R2" "36k" 80000 140000 9600 5200 0 100 ""]
 (
 	Attribute("device" "RESISTOR")
 	Attribute("manufacturer" "unknown")
@@ -1019,7 +957,7 @@ Element["" "0.125W_Carbon_Resistor" "R2" "36k" 80000 140000 5600 6200 0 100 ""]
 
 	)
 
-Element["" "0.125W_Carbon_Resistor" "R1" "12k" 80000 125000 6600 4200 0 100 ""]
+Element["" "0.125W_Carbon_Resistor" "R1" "12k" 80000 125000 9600 4700 0 100 ""]
 (
 	Attribute("device" "RESISTOR")
 	Attribute("manufacturer" "unknown")
@@ -1058,31 +996,7 @@ Element["" "FTDI" "OBD2" "unknown" 140000 155000 -5000 -11000 0 100 ""]
 
 	)
 
-Element["" "JUMPER8" "TM" "unknown" 10000 155000 -5000 -11000 0 100 ""]
-(
-	Attribute("device" "CONNECTOR_8")
-	Attribute("manufacturer" "unknown")
-	Attribute("manufacturer_part_number" "unknown")
-	Attribute("vendor" "unknown")
-	Attribute("vendor_part_number" "unknown")
-	Pin[0 0 6000 3000 6600 3800 "1" "1" "square,edge2,thermal(0X)"]
-	Pin[10000 0 6000 3000 6600 3800 "2" "2" "edge2"]
-	Pin[20000 0 6000 3000 6600 3800 "3" "3" "edge2"]
-	Pin[30000 0 6000 3000 6600 3800 "4" "4" "edge2"]
-	Pin[40000 0 6000 3000 6600 3800 "5" "5" "edge2"]
-	Pin[50000 0 6000 3000 6600 3800 "6" "6" "edge2"]
-	Pin[60000 0 6000 3000 6600 3800 "7" "7" "edge2"]
-	Pin[70000 0 6000 3000 6600 3800 "8" "8" "edge2"]
-	ElementLine [-5000 5000 75000 5000 1000]
-	ElementLine [75000 -5000 75000 5000 1000]
-	ElementLine [-5000 -5000 75000 -5000 1000]
-	ElementLine [-5000 -5000 -5000 5000 1000]
-	ElementLine [5000 -5000 5000 5000 1000]
-	ElementLine [-5000 -5000 5000 -5000 1000]
-
-	)
-
-Element["" "fuse" "F1" "unknown" 154961 115000 5600 -13800 0 100 ""]
+Element["" "fuse" "F1" "unknown" 154961 115000 4100 -12800 0 100 ""]
 (
 	Attribute("device" "FUSE")
 	Attribute("manufacturer" "unknown")
@@ -1098,7 +1012,7 @@ Element["" "fuse" "F1" "unknown" 154961 115000 5600 -13800 0 100 ""]
 
 	)
 
-Element["" "JUMPER2" "ODBPWR" "unknown" 140000 134000 -5000 -11000 0 100 ""]
+Element["" "JUMPER2" "ODBPWR" "unknown" 115000 155000 -5000 -11000 0 100 ""]
 (
 	Attribute("device" "CONNECTOR_2")
 	Attribute("manufacturer" "unknown")
@@ -1116,25 +1030,7 @@ Element["" "JUMPER2" "ODBPWR" "unknown" 140000 134000 -5000 -11000 0 100 ""]
 
 	)
 
-Element["" "JUMPER2" "TMPWR" "unknown" 40000 140000 -5000 -11000 0 100 ""]
-(
-	Attribute("device" "CONNECTOR_2")
-	Attribute("manufacturer" "unknown")
-	Attribute("manufacturer_part_number" "unknown")
-	Attribute("vendor" "unknown")
-	Attribute("vendor_part_number" "unknown")
-	Pin[0 0 6000 3000 6600 3800 "1" "1" "square,edge2,thermal(0X)"]
-	Pin[10000 0 6000 3000 6600 3800 "2" "2" "edge2"]
-	ElementLine [-5000 5000 15000 5000 1000]
-	ElementLine [15000 -5000 15000 5000 1000]
-	ElementLine [-5000 -5000 15000 -5000 1000]
-	ElementLine [-5000 -5000 -5000 5000 1000]
-	ElementLine [5000 -5000 5000 5000 1000]
-	ElementLine [-5000 -5000 5000 -5000 1000]
-
-	)
-
-Element["" "diode" "D1" "unknown" 50106 84803 -7802 20591 0 100 ""]
+Element["" "diode" "D1" "unknown" 50106 84803 -13802 12091 0 100 ""]
 (
 	Attribute("device" "DIODE")
 	Attribute("manufacturer" "unknown")
@@ -1149,6 +1045,108 @@ Element["" "diode" "D1" "unknown" 50106 84803 -7802 20591 0 100 ""]
 	ElementLine [-5000 20000 5000 20000 1000]
 	ElementLine [-5000 20000 0 10000 1000]
 	ElementLine [-5000 10000 5000 10000 1000]
+
+	)
+
+Element["" "0-338068-8" "TM" "unknown" 17500 145000 -12000 -11000 0 100 ""]
+(
+	Attribute("device" "CONNECTOR_8")
+	Attribute("manufacturer" "unknown")
+	Attribute("manufacturer_part_number" "unknown")
+	Attribute("vendor" "unknown")
+	Attribute("vendor_part_number" "unknown")
+	Pin[0 10000 6299 1200 7299 3150 "1" "1" "square,edge2,thermal(0X)"]
+	Pin[5000 0 6299 1200 7299 3150 "2" "2" "edge2"]
+	Pin[10000 10000 6299 1200 7299 3150 "3" "3" "edge2"]
+	Pin[15000 0 6299 1200 7299 3150 "4" "4" "edge2"]
+	Pin[20000 10000 6299 1200 7299 3150 "5" "5" "edge2"]
+	Pin[25000 0 6299 1200 7299 3150 "6" "6" "edge2"]
+	Pin[30000 10000 6299 1200 7299 3150 "7" "7" "edge2"]
+	Pin[35000 0 6299 1200 7299 3150 "8" "8" "edge2"]
+	Pin[-5511 2913 7306 1400 7906 5906 "mnt" "0" "edge2"]
+	ElementLine [-11593 -5038 -11593 15039 600]
+	ElementLine [-11593 15039 46594 15039 600]
+	ElementLine [46594 15039 46594 -5038 600]
+	ElementLine [46594 -5038 -11593 -5038 600]
+
+	)
+
+Element["" "launchpad-header-40" "K1" "unknown" 10000 35000 17000 -5500 0 100 ""]
+(
+	Attribute("device" "stellaris-launchpad")
+	Attribute("manufacturer" "unknown")
+	Attribute("manufacturer_part_number" "unknown")
+	Attribute("vendor" "unknown")
+	Attribute("vendor_part_number" "unknown")
+	Pin[0 0 6000 3000 6600 3800 "+3.3V" "1" "square,edge2"]
+	Pin[0 10000 6000 3000 6600 3800 "PB5" "2" "edge2"]
+	Pin[0 20000 6000 3000 6600 3800 "PB0" "3" "edge2"]
+	Pin[0 30000 6000 3000 6600 3800 "PB1" "4" "edge2"]
+	Pin[0 40000 6000 3000 6600 3800 "PE4" "5" "edge2"]
+	Pin[0 50000 6000 3000 6600 3800 "PE5" "6" "edge2"]
+	Pin[0 60000 6000 3000 6600 3800 "PB4" "7" "edge2"]
+	Pin[0 70000 6000 3000 6600 3800 "PA5" "8" "edge2"]
+	Pin[0 80000 6000 3000 6600 3800 "PA6" "9" "edge2"]
+	Pin[0 90000 6000 3000 6600 3800 "PA7" "10" "edge2"]
+	Pin[180000 0 6000 3000 6600 3800 "GND" "11" "square,edge2,thermal(0X)"]
+	Pin[180000 10000 6000 3000 6600 3800 "PB2" "12" "edge2"]
+	Pin[180000 20000 6000 3000 6600 3800 "PE0" "13" "edge2"]
+	Pin[180000 30000 6000 3000 6600 3800 "PF0" "14" "edge2"]
+	Pin[180000 40000 6000 3000 6600 3800 "RST" "15" "edge2"]
+	Pin[180000 50000 6000 3000 6600 3800 "PB7" "16" "edge2"]
+	Pin[180000 60000 6000 3000 6600 3800 "PB6" "17" "edge2"]
+	Pin[180000 70000 6000 3000 6600 3800 "PA4" "18" "edge2"]
+	Pin[180000 80000 6000 3000 6600 3800 "PA3" "19" "edge2"]
+	Pin[180000 90000 6000 3000 6600 3800 "PA2" "20" "edge2"]
+	Pin[10000 0 6000 3000 6600 3800 "VBUS" "21" "square,edge2"]
+	Pin[10000 10000 6000 3000 6600 3800 "GND" "22" "square,edge2,thermal(0X)"]
+	Pin[10000 20000 6000 3000 6600 3800 "PD0" "23" "edge2"]
+	Pin[10000 30000 6000 3000 6600 3800 "PD1" "24" "edge2"]
+	Pin[10000 40000 6000 3000 6600 3800 "PD2" "25" "edge2"]
+	Pin[10000 50000 6000 3000 6600 3800 "PD3" "26" "edge2"]
+	Pin[10000 60000 6000 3000 6600 3800 "PE1" "27" "edge2"]
+	Pin[10000 70000 6000 3000 6600 3800 "PE2" "28" "edge2"]
+	Pin[10000 80000 6000 3000 6600 3800 "PE3" "29" "edge2"]
+	Pin[10000 90000 6000 3000 6600 3800 "PF1" "30" "edge2"]
+	Pin[170000 0 6000 3000 6600 3800 "PF2" "31" "edge2"]
+	Pin[170000 10000 6000 3000 6600 3800 "PF3" "32" "edge2"]
+	Pin[170000 20000 6000 3000 6600 3800 "PB3" "33" "edge2"]
+	Pin[170000 30000 6000 3000 6600 3800 "PC4" "34" "edge2"]
+	Pin[170000 40000 6000 3000 6600 3800 "PC5" "35" "edge2"]
+	Pin[170000 50000 6000 3000 6600 3800 "PC6" "36" "edge2"]
+	Pin[170000 60000 6000 3000 6600 3800 "PC7" "37" "edge2"]
+	Pin[170000 70000 6000 3000 6600 3800 "PD6" "38" "edge2"]
+	Pin[170000 80000 6000 3000 6600 3800 "PD7" "39" "edge2"]
+	Pin[170000 90000 6000 3000 6600 3800 "PF4" "40" "edge2"]
+	ElementLine [-5000 -5000 -5000 95000 1000]
+	ElementLine [-5000 95000 15000 95000 1000]
+	ElementLine [15000 95000 15000 -5000 1000]
+	ElementLine [15000 -5000 -5000 -5000 1000]
+	ElementLine [5000 -5000 5000 95000 1000]
+	ElementLine [-5000 5000 5000 5000 1000]
+	ElementLine [165000 -5000 165000 95000 1000]
+	ElementLine [165000 95000 185000 95000 1000]
+	ElementLine [185000 95000 185000 -5000 1000]
+	ElementLine [185000 -5000 165000 -5000 1000]
+	ElementLine [175000 -5000 175000 95000 1000]
+
+	)
+
+Element["" "JUMPER2" "TMPWR" "unknown" 75000 155000 -5000 -11000 0 100 ""]
+(
+	Attribute("device" "CONNECTOR_2")
+	Attribute("manufacturer" "unknown")
+	Attribute("manufacturer_part_number" "unknown")
+	Attribute("vendor" "unknown")
+	Attribute("vendor_part_number" "unknown")
+	Pin[0 0 6000 3000 6600 3800 "1" "1" "square,edge2,thermal(0X)"]
+	Pin[10000 0 6000 3000 6600 3800 "2" "2" "edge2"]
+	ElementLine [-5000 5000 15000 5000 1000]
+	ElementLine [15000 -5000 15000 5000 1000]
+	ElementLine [-5000 -5000 15000 -5000 1000]
+	ElementLine [-5000 -5000 -5000 5000 1000]
+	ElementLine [5000 -5000 5000 5000 1000]
+	ElementLine [-5000 -5000 5000 -5000 1000]
 
 	)
 Layer(1 "top")
@@ -1182,36 +1180,6 @@ Layer(2 "bottom")
 	Line[150000 155000 170000 135000 1000 2000 "clearline"]
 	Line[170000 115000 170000 135000 1000 2000 "clearline"]
 	Line[173000 142000 173000 122000 1000 2000 "clearline"]
-	Line[54500 150500 54500 161500 1000 2000 "clearline,auto"]
-	Line[54500 161500 30000 161500 1000 2000 "clearline,auto"]
-	Line[30000 155000 30000 161500 1000 2000 "clearline,auto"]
-	Line[190000 115000 184500 115000 1000 2000 "clearline,auto"]
-	Line[184500 115000 184500 148500 1000 2000 "clearline,auto"]
-	Line[184500 148500 175000 148500 1000 2000 "clearline,auto"]
-	Line[175000 148500 175000 159500 1000 2000 "clearline,auto"]
-	Line[175000 159500 60000 159500 1000 2000 "clearline,auto"]
-	Line[60000 155000 60000 159500 1000 2000 "clearline,auto"]
-	Line[190000 125000 190000 150500 1000 2000 "clearline,auto"]
-	Line[190000 150500 184500 150500 1000 2000 "clearline,auto"]
-	Line[184500 150500 184500 163500 1000 2000 "clearline,auto"]
-	Line[184500 163500 20000 163500 1000 2000 "clearline,auto"]
-	Line[20000 155000 20000 163500 1000 2000 "clearline,auto"]
-	Line[5000 147000 5000 110000 1000 2000 "clearline"]
-	Line[5000 110000 10000 105000 1000 2000 "clearline"]
-	Line[167000 133000 150000 150000 1000 2000 "clearline"]
-	Line[54500 150500 149500 150500 1000 2000 "clearline"]
-	Line[149500 150500 151000 149000 1000 2000 "clearline"]
-	Line[40000 155000 34000 149000 1000 2000 "clearline"]
-	Line[34000 149000 7000 149000 1000 2000 "clearline"]
-	Line[7000 149000 5000 147000 1000 2000 "clearline"]
-	Line[15500 115000 10000 115000 1000 2000 "clearline,auto"]
-	Line[15500 115000 15500 147000 1000 2000 "clearline,auto"]
-	Line[50000 147000 15500 147000 1000 2000 "clearline,auto"]
-	Line[50000 147000 50000 155000 1000 2000 "clearline,auto"]
-	Line[167000 133000 167000 108000 1000 2000 "clearline"]
-	Line[167000 108000 175000 100000 1000 2000 "clearline"]
-	Line[175000 100000 185000 100000 1000 2000 "clearline"]
-	Line[185000 100000 190000 105000 1000 2000 "clearline"]
 	Line[30000 10500 30000 15000 1000 2000 "clearline,auto"]
 	Line[30000 10500 14500 10500 1000 2000 "clearline,auto"]
 	Line[14500 10500 14500 22250 1000 2000 "clearline,auto"]
@@ -1229,51 +1197,86 @@ Layer(2 "bottom")
 	Line[180000 85000 150000 85000 1000 2000 "clearline,auto"]
 	Line[150000 15000 150000 85000 1000 2000 "clearline,auto"]
 	Line[155000 115039 154961 115000 2500 2000 "clearline"]
-	Line[50000 140000 80000 140000 1000 2000 "clearline"]
-	Line[50000 140000 42000 132000 2500 2000 "clearline"]
-	Line[42000 132000 42000 35000 2500 2000 "clearline"]
-	Line[150000 134000 155000 129000 2500 2000 "clearline"]
-	Line[155000 129000 155000 115039 2500 2000 "clearline"]
+	Line[40000 122500 40000 35000 2500 2000 "clearline"]
+	Line[167000 108000 167000 108000 1000 2000 "clearline"]
+	Line[85000 155000 85000 145000 2500 2000 "clearline"]
+	Line[85000 145000 75000 135000 2500 2000 "clearline"]
+	Line[75000 135000 52500 135000 2500 2000 "clearline"]
+	Line[52500 135000 40000 122500 2500 2000 "clearline"]
+	Line[125000 155000 125000 145039 2500 2000 "clearline"]
+	Line[125000 145039 155000 115039 2500 2000 "clearline"]
+	Line[190000 105000 184500 105000 1000 2000 "clearline,auto"]
+	Line[184500 105000 184500 159650 1000 2000 "clearline,auto"]
+	Line[184500 159650 27500 159650 1000 2000 "clearline,auto"]
+	Line[27500 155000 27500 159650 1000 2000 "clearline,auto"]
+	Line[196500 115000 190000 115000 1000 2000 "clearline,auto"]
+	Line[196500 115000 196500 163650 1000 2000 "clearline,auto"]
+	Line[196500 163650 6836 163650 1000 2000 "clearline,auto"]
+	Line[6836 140350 6836 163650 1000 2000 "clearline,auto"]
+	Line[194500 125000 190000 125000 1000 2000 "clearline,auto"]
+	Line[194500 125000 194500 161650 1000 2000 "clearline,auto"]
+	Line[194500 161650 22500 161650 1000 2000 "clearline,auto"]
+	Line[22500 145000 22500 161650 1000 2000 "clearline,auto"]
+	Line[15500 115000 10000 115000 1000 2000 "clearline,auto"]
+	Line[47150 138350 47150 150350 1000 2000 "clearline,auto"]
+	Line[10000 105000 5500 105000 1000 2000 "clearline,auto"]
+	Line[15500 115000 15500 127000 1000 2000 "clearline"]
+	Line[15500 127000 22500 134000 1000 2000 "clearline"]
+	Line[22500 134000 42650 134000 1000 2000 "clearline"]
+	Line[42650 134000 47150 138500 1000 2000 "clearline"]
+	Line[6836 140350 6836 152000 1000 2000 "clearline,auto"]
+	Line[5500 105000 5500 138350 1000 2000 "clearline,auto"]
+	Line[32500 138350 5500 138350 1000 2000 "clearline,auto"]
+	Line[32500 138350 32500 145000 1000 2000 "clearline,auto"]
+	Line[47150 144350 47150 150350 1000 2000 "clearline,auto"]
+	Line[42500 145000 37500 145000 1000 2000 "clearline"]
+	Line[37500 145000 37500 150000 1000 2000 "clearline"]
+	Line[37500 150000 27500 150000 1000 2000 "clearline"]
+	Line[27500 150000 27500 140500 1000 2000 "clearline"]
+	Line[27500 140350 27500 145250 1000 2000 "clearline,auto"]
+	Line[27500 140350 6836 140350 1000 2000 "clearline,auto"]
+	Line[6836 140350 6836 146175 1000 2000 "clearline,auto"]
+	Line[37500 155000 42150 150350 1000 2000 "clearline"]
+	Line[42150 150350 47150 150350 1000 2000 "clearline"]
 )
 Layer(3 "outline")
 (
-	Polygon("clearpoly")
-	(
-		[1000 1000] [200000 1000] [200000 169000] [1000 169000] 
-	)
+	Line[0 0 200000 0 1000 2000 "clearline"]
+	Line[200000 0 200000 166000 1000 2000 "clearline"]
+	Line[200000 166000 0 166000 1000 2000 "clearline"]
+	Line[0 166000 0 0 1000 2000 "clearline"]
 )
 Layer(4 "silk")
 (
-	Line[14500 166000 13000 164500 600 1200 "clearline"]
-	Line[10500 167500 12000 167500 600 1200 "clearline"]
-	Line[12000 167500 13000 166500 600 1200 "clearline"]
-	Line[13000 166500 12000 165500 600 1200 "clearline"]
-	Line[12500 166000 13000 166000 600 1200 "clearline"]
-	Line[13000 166000 13750 165250 600 1200 "clearline"]
-	Line[8500 167500 6500 167500 600 1200 "clearline"]
-	Line[8500 166500 5000 166500 600 1200 "clearline"]
-	Line[12000 166000 9500 166000 600 1200 "clearline"]
-	Line[12500 167000 11500 166000 600 1200 "clearline"]
-	Line[11500 166000 13000 166000 600 1200 "clearline"]
-	Line[13000 166000 13500 166500 600 1200 "clearline"]
-	Line[12750 166250 12250 166250 600 1200 "clearline"]
-	Line[12250 166250 12000 166500 600 1200 "clearline"]
-	Line[12000 166500 12500 166500 600 1200 "clearline"]
-	Line[12500 166500 12750 166750 600 1200 "clearline"]
-	Line[12500 167500 14250 165750 600 1200 "clearline"]
-	Line[14250 165750 13750 165750 600 1200 "clearline"]
-	Line[13750 165750 13500 166000 600 1200 "clearline"]
-	Line[14500 166000 14500 167500 600 1200 "clearline"]
-	Arc[10500 167500 1000 1000 600 1200 90 -90 "clearline"]
-	Arc[10500 167500 1000 1000 600 1200 0 -90 "clearline"]
-	Arc[10500 167500 1000 1000 600 1200 -90 -90 "clearline"]
-	Arc[10500 167500 1000 1000 600 1200 -180 -90 "clearline"]
-	Arc[14500 167500 1000 1000 600 1200 90 -90 "clearline"]
-	Arc[14500 167500 1000 1000 600 1200 0 -90 "clearline"]
-	Arc[14500 167500 1000 1000 600 1200 -90 -90 "clearline"]
-	Arc[14500 167500 1000 1000 600 1200 -180 -90 "clearline"]
-	Arc[15000 165000 2000 2000 600 1200 -90 -90 "clearline"]
-	Arc[14000 166000 4500 4500 600 1200 -90 -90 "clearline"]
+	Line[32000 130500 33500 130500 600 1200 "clearline"]
+	Line[33500 130500 34500 129500 600 1200 "clearline"]
+	Line[34500 129500 33500 128500 600 1200 "clearline"]
+	Line[34000 129000 34500 129000 600 1200 "clearline"]
+	Line[34500 129000 35250 128250 600 1200 "clearline"]
+	Line[30000 130500 28000 130500 600 1200 "clearline"]
+	Line[30000 129500 26500 129500 600 1200 "clearline"]
+	Line[33500 129000 31000 129000 600 1200 "clearline"]
+	Line[34000 130000 33000 129000 600 1200 "clearline"]
+	Line[33000 129000 34500 129000 600 1200 "clearline"]
+	Line[34500 129000 35000 129500 600 1200 "clearline"]
+	Line[34250 129250 33750 129250 600 1200 "clearline"]
+	Line[33750 129250 33500 129500 600 1200 "clearline"]
+	Line[33500 129500 34000 129500 600 1200 "clearline"]
+	Line[34000 129500 34250 129750 600 1200 "clearline"]
+	Line[34000 130500 35750 128750 600 1200 "clearline"]
+	Line[35750 128750 35250 128750 600 1200 "clearline"]
+	Line[35250 128750 35000 129000 600 1200 "clearline"]
+	Line[36000 129000 36000 130500 600 1200 "clearline"]
+	Arc[32000 130500 1000 1000 600 1200 90 -90 "clearline"]
+	Arc[32000 130500 1000 1000 600 1200 0 -90 "clearline"]
+	Arc[32000 130500 1000 1000 600 1200 -90 -90 "clearline"]
+	Arc[32000 130500 1000 1000 600 1200 -180 -90 "clearline"]
+	Arc[36000 130500 1000 1000 600 1200 90 -90 "clearline"]
+	Arc[36000 130500 1000 1000 600 1200 0 -90 "clearline"]
+	Arc[36000 130500 1000 1000 600 1200 -90 -90 "clearline"]
+	Arc[36000 130500 1000 1000 600 1200 -180 -90 "clearline"]
+	Arc[35500 128500 2000 2000 600 1200 -90 -90 "clearline"]
+	Arc[35000 129000 4500 4500 600 1200 -90 -90 "clearline"]
 )
 Layer(5 "silk")
 (
